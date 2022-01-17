@@ -1,0 +1,117 @@
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
+img{
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 2px 2px #3cc;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.todo__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.todo__input{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: darkcyan;
+    text-align: center;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px 1px #3cc;
+}
+
+.todo__input::placeholder{
+    color: #999;
+}
+
+
+.todos__button{
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    background-color: #3cc;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px black;
+}
+
+.new__button{
+    display: block;
+    width: 40px;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    background-color: #3cc;
+    padding: 5px;
+    box-shadow: 0 0 2px 1px black;
+}
+
+.todo__item{
+    border-top: 1px solid #3cc;
+    color: darkcyan;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.todo__item:last-child{
+    border-bottom: 1px solid #3cc;
+}
+
+span{
+    flex-grow: 1;
+}
